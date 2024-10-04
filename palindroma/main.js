@@ -13,9 +13,9 @@ console.log('test');
  *      bool
  */
 
-//prompt dall' utente, variabile bool posta a falso
+//prompt dall' utente
 let pali_to_check = prompt("Ciao!, inserisci una parola che secondo te è un palindroma!");
-let reite = false;
+
 
 //function per invertire l'input dato dall'utente
 
