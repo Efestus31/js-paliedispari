@@ -24,16 +24,18 @@ function num_sum(){
 function is_even(){
     return num % 2 === 0;
 }
+let sum_num = num_sum();
+let cpu_num = random_num();
 
 // log in console dei risultati finora
 console.log("il numero da te scelto è:" + user_num);
-console.log("il numero del computer è:" + random_num);
-console.log("la somma dei numeri è:" + num_sum);
+console.log(`il numero generato dal computer è:` + cpu_num);
+console.log(`la somma dei due numeri è: ` + sum_num);
 
 function winner_is() {
-    if((div === "pari" && is_even === "pari") || (div === "dispari" && is_even === "dispari"));{
+    if((div === "pari" && is_even === "pari") || (div === "dispari" && is_even === "dispari")){
         console.log("Hai vinto!");        
-    }else(){
+    }else{
         console.log("Hai perso!");
     }
     
