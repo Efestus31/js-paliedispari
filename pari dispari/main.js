@@ -21,26 +21,27 @@ function num_sum(){
 }
 
 //function per stabilire se il numero sia pari
-function is_even(){
+function is_even(num){
     return num % 2 === 0;
 }
 let sum_num = num_sum();
-let cpu_num = random_num();
+let cpu_num = sum_num.cpu_num;
+sum_num = sum_num.sum;
 
 // log in console dei risultati finora
 console.log("il numero da te scelto è:" + user_num);
-console.log(`il numero generato dal computer è:` + cpu_num);
-console.log(`la somma dei due numeri è: ` + sum_num);
+console.log("Il numero della CPU è: " + cpu_num);
+console.log(`La somma dei due numeri è: ${sum}`);
 
 function winner_is() {
-    if((div === "pari" && is_even === "pari") || (div === "dispari" && is_even === "dispari")){
+    let even = is_even(sum);
+    if((div === "pari" && even ) || (div === "dispari" && !even)){
         console.log("Hai vinto!");        
     }else{
         console.log("Hai perso!");
     }
-    
-        
-    }
+       
+}
 
-
+winner_is();
 
